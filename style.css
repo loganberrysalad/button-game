@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#block{
+    width: 250px;
+    height:100px;
+    margin:3px auto;
+    border-radius: 50px 0px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(red, orange);
+
+}
+#block > h2 {
+    color: rgb(251, 251, 251);
+    font-size:45px;
+    animation-name: welcome;
+    animation-duration: 0.90s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes welcome {
+    0% {
+      transform: rotate(5deg);
+    }
+    50%{
+        color:rgb(145, 255, 0);
+    
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+  
+/* CATCH ME BUTTON  */
+.catchMe{
+    width: 90px;
+    height: 50px;
+    animation-name: catchy;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.catchMe:active{
+    background: #eeff00;
+    font-size: 20px; 
+}
+
+@keyframes catch{
+    10%{
+        top:50px;
+        left: 200px;
+    }
+    20%{
+        top:400px;
+        left: 200px;
+    }
+    30%{
+        top:400px;
+        left: 200px;
+    }
+
+    40%{
+        top:100px;
+        left: 200px;
+    }
+    50%{
+        top:300px;
+        left: 600px;
+    }
+    60%{
+        top:200px;
+        left: 200px;
+    }
+    70%{
+       
+        top:300px;
+    }
+    80%{
+        bottom: 100px;
+        left:500px;
+    }
+    90%{
+        right:0px;
+    }
+    100%{
+        bottom: auto;
+        left:400px;
+    }
+}
